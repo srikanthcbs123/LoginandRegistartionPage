@@ -1,0 +1,19 @@
+<div class="wrapper">
+    <div class="wrapped-div">
+      <div class="tab-header">
+     <!-- synatx :   Create hyperlink for the child route:
+<a routerLink="/parentpath/childpath">Link text</a> -->
+<!-- //dont't use href attibute for <a anchor tag it will reload the total page.
+to avoid the page refresh angular framework provides one attribute called routerlink .
+//by using routerlink attribute we can avoid page refresh issue. -->
+        <h2 routerLink="/user/login" routerLinkActive="active">Sign In</h2>
+        <h2 routerLink="/user/registartion" routerLinkActive="active">Sign Up</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-10 offset-md-1">  
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+  
