@@ -21,6 +21,11 @@ BaseURI:String="http://localhost:9111/api";//This is the base url of our restapi
     debugger;
    return  this.hc.post<any>(this.BaseURI+'/User/UserSignIn',formdata)
    }
+   Register(formdata:any):Observable<any>
+   {
+return this.hc.post<any>(this.BaseURI+"/User/UserSignUp",formdata);
+   }
+
 }
 
 
